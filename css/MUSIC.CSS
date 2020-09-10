@@ -1,0 +1,545 @@
+img{
+	box-shadow: 0px 0px 5px 2px white;
+}
+
+
+body{
+	background-image: url('http://wallpapercave.com/wp/rOdMY1v.jpg');
+color: white;
+//background-color: #00001a;
+background-size: cover;
+	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+header div{
+	width: 400px;
+	//border: 2px solid white;
+	display: flex;
+}
+#div1 {
+	justify-content: space-around;
+	
+	
+}
+
+#div1 img{
+	animation-name: rot;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes rot{
+
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+
+}
+#div1 h2{
+	animation-name: roti;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	font-size: 2rem;
+}
+@keyframes roti{
+
+	0%{
+		transform: rotateY(0deg);
+	}
+	50%{
+		color: yellow;
+	}
+	100%{
+		transform: rotateY(360deg);
+		color: red;
+		
+
+	}
+
+}
+
+
+#div2{
+	justify-content: center;
+align-items: center;
+}
+
+header h2{
+font-size: 1.8rem;
+color: white;
+vertical-align: top;
+margin-left: 2px;
+font-weight: 10;
+
+}
+header img{
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 4px white;
+}
+
+
+header form input{
+	width: 250px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+	outline: none;
+}
+#home-screen::-webkit-scrollbar {
+	 display: none;
+}
+#home-screen{
+	margin-left: 2%;
+width: 75%;
+height: 83vh;
+
+display: inline-block;
+//border:2px solid white;
+vertical-align: top;
+overflow: scroll;
+
+
+}
+
+#home-screen #popular{
+	margin-top: 30px;
+	width: 100%;
+	height: 250px;
+//border:2px solid white;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+#home-screen #popular div{
+
+	width:28%;
+	height: 100%;
+	//border:2px solid white;
+	transition: all .5s linear;
+	border-radius: 15px;
+opacity: .9;
+
+}
+#home-screen #popular div img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	
+}
+#home-screen #popular div:hover{
+	width:31%;
+	height: 115%;
+	box-shadow: 0px 0px 10px 4px white;
+	opacity: 1;
+}
+
+#release{
+	margin-top: 15px;
+	width: 85%;
+	height: auto;
+//border:2px solid white;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+#release>div{
+	position: relative;
+width: 350px;
+height: 130px;
+//border:2px solid white;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.playbutton{
+
+}
+#release div div {
+	
+position: relative;
+	width: 33%;
+	height: 85%;
+	color: white;
+
+}
+#release div div div{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	background-color: rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+	
+}
+#release div div:hover  div{
+	visibility: visible;
+}
+
+#release div div img{
+
+	width: 100%;
+	height: 100%;
+}
+#release div a{
+	position: absolute;
+	top:0;
+	right: 1%;
+	color: white;
+}
+#home-screen #artist{
+margin-top: 10px;
+width: 80%;
+
+height: auto;
+//border:2px solid white;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+
+padding: 10px;
+
+
+}
+#home-screen #artist div{
+position: relative;
+width: 100px;
+height: 100px;
+//border:2px solid white;
+border-radius: 50%;
+transition: all .5s linear;
+}
+#home-screen #artist div span{
+	position: absolute;
+	top:40px;
+	left: 10px;
+	visibility: hidden;
+	transition: all .5s linear;
+}
+
+#home-screen #artist div img{
+
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: all .5s linear;
+}
+#home-screen #artist div:hover{
+	box-shadow: 0px 0px 10px 2px white;
+
+}
+#home-screen #artist div:hover img{
+	opacity: .5;
+}
+#home-screen #artist div:hover span{
+	visibility: visible;
+
+}
+#queue{
+	width: 20%;
+	height: 83vh;
+	display: inline-block;
+//border:2px solid white;
+
+}
+#queuehead{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+#playlistt{
+	width: 100%;
+	//border:2px solid white;
+	height: 88%;
+	overflow: scroll;
+
+}
+#playlistt::-webkit-scrollbar {
+	 display: none;
+}
+#queue #playlistt div div{
+	width: 30%;
+	height: 100%;
+	//border:1px solid white;
+	margin-left: 6%;
+}
+#queue #playlistt div div img{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 0px 3px 1px white;
+}
+
+ .playlist{
+	width: 99%;
+	height: 40px;
+	//border:2px solid white;
+	margin-top: 10px;
+	display: flex;
+	position: relative;
+}
+.size{
+	font-size: 15px;
+	font-weight: bold;
+
+	vertical-align: top;
+	margin-top: 0;
+
+}
+.size2{
+	font-size: 8px;
+	margin-top: -10%;
+}
+#queue #playlistt div span{
+	position: absolute;
+	top:30%;
+	left:.5px;
+}
+#queue #playlistt div a{
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 85%;
+
+}
+#queue #playlistt div a:hover{
+	color: red;
+}
+
+#genre{
+
+width: 80%;
+
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+align-items: center;
+//border:2px solid white;
+flex-wrap: wrap;
+padding: 10px;
+background-color: transparent;
+
+height: auto;
+}
+#genre div{
+
+width: 80px;
+height: 80px;
+//border:2px solid white;
+border-radius: 50%;
+}
+#station{
+
+position: relative;
+background-color: yellow;
+
+}
+#station div{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 60px;
+	//border:2px solid white;
+	height: 80px;
+	border-radius: 0;
+	top: -20%;
+	left: 10%;
+	background-color: orange;
+
+
+}
+#genre div img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#party{
+margin-top: 15px;
+	width: 80%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	//border:2px solid white;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+#party >div{
+position: relative;
+	//border:2px solid white;
+	width: 240px;
+	height: 140px;
+	overflow: hidden;
+transition: all .5s linear
+
+}
+#party div img{
+	width: 100%;
+	height: 100%;
+transition: all .3s linear
+}
+#party div div{
+	color: white;
+	font-size: 1.8rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top:0;
+	opacity: .4;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
+#party div:hover img{
+	width: 115%;
+	height: 115%;
+
+}
+#queuemobile{
+	display: none;
+}
+@media screen and (max-width: 600px){
+#queuemobile{
+	display: block;
+}
+	#queue{
+		visibility: hidden;
+		width: 36%;
+		position: absolute;
+		left: 60%;
+		top:15%;
+		background-color: #00001a;
+		padding: 10px;
+	}
+	#queue:target{
+		visibility: visible;
+	}
+	
+	#home-screen{
+		width: 99%;
+	}
+	#release{
+		width: 100%;
+		justify-content: flex-start;
+	}
+	#release>div{
+		width: 180px;
+		height: 100px;
+font-size: .7rem;
+	}
+	#home-screen #artist{
+		width: 100%;
+	}
+	#home-screen #popular{
+		height: 150px;
+	}
+}
+
+#english {
+	margin-top: 20px;
+	width: 80%;
+	height: auto;
+	//border: 2px solid white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+padding: 5px;
+
+}
+#english div{
+	width:100px;
+	height: 100px;
+	//border: 2px solid white;
+	
+}
+#english div img{
+	width: 100%;
+	height: 100%;
+}
+#hindi {
+	margin-top: 20px;
+	width: 80%;
+	height: auto;
+	//border: 2px solid white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+padding: 5px;
+
+}
+#hindi div{
+	width:100px;
+	height: 100px;
+	//border: 2px solid white;
+	
+}
+#hindi div img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#bottom-player {
+display: flex;
+justify-content: space-around;
+	position: fixed;
+	top: 91vh;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	padding: 5px;
+	background-color: #262626;
+
+}
+#bottom-player div{
+
+	width: 25%;
+	text-align: center;
+	height: 80%;
+	
+	//border:1px solid white;
+}
+#bottom-player div img{
+	width: 25%;
+	height: 100%;
+
+}
+#bottom-player div span{
+	margin-left: 30px;
+	
+	vertical-align: top;
+}
+#bottom-player div div{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 50%;
+	//border:1px solid white;
+}
